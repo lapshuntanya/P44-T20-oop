@@ -18,6 +18,8 @@ public:
     ~Student(); //Деструктор
 
     void showInfo();
+    void setMark(int user_mark);
+    int getMark();
 };
 
 

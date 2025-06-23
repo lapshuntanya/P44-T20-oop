@@ -26,3 +26,14 @@ void Student::showInfo() {
     cout << "Student: " << name << endl;
     cout << "Mark:    " << mark << endl << endl;
 }
+
+void Student::setMark(int user_mark) {
+    if(user_mark < 0 || user_mark > 12)
+        cout << "Error: invalid mark!\n";
+    else
+        mark = user_mark;
+}
+
+int Student::getMark() {
+    return mark;
+}
